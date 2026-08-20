@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 24px 0;
+}
+
+.wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 24px 56px;
+}
+
+/* Header */
+
+.site-header {
+  background: black;
+  color: white;
+  padding: 18px 24px;
+}
+
+.header-inner {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.site-header h1 {
+  font-size: 1.7rem;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+.site-header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-header nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.site-header nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Main Layout */
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.header {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+/* Profile Photo */
+
+.photo {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Contact */
+
+.contact-block {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 2;
+}
+
+/* Content */
+
+.content {
+  flex: 1;
+  max-width: 620px;
+}
+
+.content p {
+  margin: 0 0 16px;
+}
+
+.content h2 {
+  font-size: 1.3rem;
+  margin: 0 0 20px;
+}
+
+/* Projects */
+
+.project {
+  margin-bottom: 28px;
+}
+
+.project-image {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #cccccc;
+  margin-bottom: 12px;
+}
+
+/* Text */
+
+.meta {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #555555;
+}
+
+.muted {
+  color: #555555;
+  font-size: 0.92rem;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 8px;
+  padding-top: 24px;
+  border-top: 1px solid #cccccc;
+  color: #555555;
+  font-size: 0.85rem;
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+
+  .wrapper {
+    padding: 32px 20px 40px;
+  }
+
+  .site-header nav a {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 6px;
+  }
+
+  .columns {
+    gap: 32px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .photo {
+    max-width: 160px;
+  }
+
+  .project-image {
+    width: 250px;
+    max-width: 100%;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+}
